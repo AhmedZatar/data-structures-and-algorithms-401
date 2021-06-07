@@ -11,11 +11,9 @@ def insertShiftArray(arr,a):
     t=int(len(arr)/2)
   else:
     t=int(len(arr)/2)+1
-  for x in range(0,t):
-    newArr.append(arr[x])
-  newArr.append(a)
-  for x in range(t,len(arr)):
-    newArr.append(arr[x])
+  newArr = arr[0:t]+[a]
+  newArr = newArr+arr[t:len(arr)]
+
   return newArr
   
 
