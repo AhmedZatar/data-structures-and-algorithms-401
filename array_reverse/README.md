@@ -8,7 +8,7 @@ Function takes an array as an argument, and return an array with elements in rev
 
 ## Approach & Efficiency
 
-Create function call reverseArray take an array as input, Declare new empty array, Declare variable hold length of the input arrau, loop form the end to the begining of the array, while looping append to the new empty array, return the new array
+Create function call reverseArray take an array as input, Declare variable equal 0, Declare variable hold length of the input array -1 , Loop through the array, while looping For every ietration swap the current index with the alternative from the end, Stop when you reach the middle than return the array.
 
 
 Big O Time--> O(n)
