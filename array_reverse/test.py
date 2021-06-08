@@ -1,11 +1,15 @@
 arr=[1,2,3,4]
 
 def reverseArray(arr):
-    newArr=[]
-    t=len(arr)
-    while t!=0:
-        newArr.append(arr[t-1])
-        t=t-1
-    return newArr
+    
+    a=0
+    b=len(arr)-1
+    while a<b:
+       arr[a], arr[b] = arr[b], arr[a]
+       a += 1
+       b -= 1
+    return arr
+
+    
 
 print(reverseArray(arr))
