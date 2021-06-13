@@ -25,18 +25,39 @@ Node class that has properties for the value stored in the Node, and a pointer t
 * __ str __
   time : O(n)
   space : O(n)
+* insertBefore :
+  time : O(n)
+  space : O(1)
+* insertAfter :
+  time : O(n)
+  space : O(1)
   
+## Whiteboard Process
+### append
+
+![0](./linked_list_append.png)
+
+### insertBefore
+
+![0](./linked_list_insertBefore.png)
+
+### insertAfter
+
+![0](./linked_list_insertAfter.png)
 
 ## API
 ### insert
-which takes any value as an argument and adds a new node with that value to the head of the list.
+Takes any value as an argument and adds a new node with that value to the head of the list.
 ### includes 
-which takes any value as an argument and returns a boolean result depending on whether that value exists as a Node’s value somewhere within the list.
+Takes any value as an argument and returns a boolean result depending on whether that value exists as a Node’s value somewhere within the list.
 ### append
-which takes any value as an argument and adds a new node with that value to the end of the list.
-
+Takes any value as an argument and adds a new node with that value to the end of the list.
+### insertBefore
+Add a new node with the given newValue immediately before the first value node
+### insertAfter
+Add a new node with the given newValue immediately after the first value node
 ### __str__
-which takes in no arguments and returns a string representing all the values in the Linked List, formatted as:
+Takes in no arguments and returns a string representing all the values in the Linked List, formatted as:
 
     { a } -> { b } -> { c } -> NULL
 
