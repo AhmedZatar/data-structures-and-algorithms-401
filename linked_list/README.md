@@ -31,6 +31,10 @@ Node class that has properties for the value stored in the Node, and a pointer t
 * insertAfter :
   time : O(n)
   space : O(1)
+* kthFromEnd :
+  time : O(n)
+  space : O(n)
+
   
 ## Whiteboard Process
 ### append
@@ -39,11 +43,15 @@ Node class that has properties for the value stored in the Node, and a pointer t
 
 ### insertBefore
 
-![0](./linked_list_insertBefore.png)
+![1](./linked_list_insertBefore.png)
 
 ### insertAfter
 
-![0](./linked_list_insertAfter.png)
+![2](./linked_list_insertAfter.png)
+
+### kthFromEnd
+
+![3](./linked_list_insertAfter.png)
 
 ## API
 ### insert
@@ -56,6 +64,8 @@ Takes any value as an argument and adds a new node with that value to the end of
 Add a new node with the given newValue immediately before the first value node
 ### insertAfter
 Add a new node with the given newValue immediately after the first value node
+### kthFromEnd
+Takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list.
 ### __str__
 Takes in no arguments and returns a string representing all the values in the Linked List, formatted as:
 

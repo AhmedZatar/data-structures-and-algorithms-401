@@ -135,5 +135,50 @@ def test_insert_node_after_end():
     expected='( 1 ) -> ( 2 ) -> ( 3 ) -> ( 4 ) -> None'
     assert actual==expected
 
-
+def test_k_greater_than_linked_list():
+    # Can successfully handle method where k is greater than the length of the linked list
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(3)
+    ll.append(8)
+    ll.append(2)
     
+    actual = ll.kthFromEnd(5)
+    expected='Exception'
+    assert actual==expected
+    
+def test_k_same_the_linked_list():
+    # Can successfully handle method where k and the length of the list are the same
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(3)
+    ll.append(8)
+    ll.append(2)
+    
+    actual = ll.kthFromEnd(4)
+    expected='Exception'
+    assert actual==expected
+
+def test_k_not_postive_intger():
+    # Can successfully handle method where k is not a positive integer
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(3)
+    ll.append(8)
+    ll.append(2)
+    
+    actual = ll.kthFromEnd(-1)
+    expected="Can't enter negative input"
+    assert actual==expected
+
+def test_k_happy_path():
+    # Can successfully handle method “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(3)
+    ll.append(8)
+    ll.append(2)
+    
+    actual = ll.kthFromEnd(2)
+    expected=3
+    assert actual==expected
