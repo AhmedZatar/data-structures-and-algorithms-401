@@ -10,7 +10,12 @@ def zipLists(ll1, ll2):
     current2 = ll2.head
 
     if current1 == None or current2 == None:
-      return "there empty Linked List"
+        if current1:
+            return ll1.__str__()
+        elif current2:
+            return ll2.__str__()
+        else:
+         return "Both of the linked list is empty"
 
     valuelist = []
     while current1 or current2:
