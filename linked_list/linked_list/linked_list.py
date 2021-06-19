@@ -131,6 +131,40 @@ class LinkedList:
         return output
     
 
+def palindrome(ll):
+  valuelist=[]
+  current = ll.head
+  while current:
+    valuelist+=[current.value]         
+    current=current.next
+
+  for i in range(len(valuelist)//2):
+    if valuelist[i]!=valuelist[-1*i-1]:
+      return False
+  return True
+
+def reverse(ll):
+  valuelist=[]
+  x='head->' 
+  current = ll.head
+  while current:
+    valuelist+=[current.value]            
+    current=current.next
+  print(valuelist)
+  for i in range(len(valuelist)):
+      if i==len(valuelist)-1:
+          x+=f'({valuelist[-1*i-1]})'
+      else:         
+          x+=f'({valuelist[-1*i-1]})->'
+
+  return x
+  
+
+   
+
+
+
+
 
     
 
@@ -138,16 +172,14 @@ class LinkedList:
 if __name__ == "__main__":
 
     ll = LinkedList()  
-    ll.append(4)
-    ll.append(-1)
-    ll.append('s')
-    ll.append(5)
+    ll.append(1)
+    ll.append(2)
+    ll.append(3)
+    ll.append(2)
+    ll.append(1)
+
+    # ll.append(1)
+    # ll.append(4)
     print(ll.__str__())
-    ll.insertAfter(5,6)
-    print(ll.__str__())
-    ll.insertBefore(6,'ahmed')
-    print(ll.__str__())
-    print(ll.includes(-1))
-    print(ll.includes(6))
-    print(ll.kthFromEnd(6))
-    
+    print(palindrome(ll))
+    # print(reverse(ll))
