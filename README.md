@@ -8,4 +8,5 @@
 | Linked List | [Press Here!](./linked_list/README.md) |
 | LL Zip | [Press Here!](./ll_zip/README.md) |
 | Stacks and Queues | [Press Here!](./stacks_and_queues/README.md) |
+| Queue with Stacks | [Press Here!](./queue_with_stacks/README.md) |
 
