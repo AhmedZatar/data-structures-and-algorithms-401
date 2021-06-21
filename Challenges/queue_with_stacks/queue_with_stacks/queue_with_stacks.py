@@ -53,7 +53,7 @@ class PseudoQueue:
         dequeuevalue = self.rear.pop()
 
         while self.rear.top:
-            print(self.rear.top.value)
+        
     
             self.front.push(self.rear.pop())
 
@@ -85,3 +85,5 @@ if __name__ == "__main__":
     queue.enqueue(5)
     queue.dequeue()
     print(queue.__str__())
+    print(queue.front.top.value)
+
